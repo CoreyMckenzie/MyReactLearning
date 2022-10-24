@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #FFEFD3;
+  background-color: #14213D;
+  color: white;
 }
 
 .custom-position {
