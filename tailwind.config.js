@@ -12,7 +12,7 @@ module.exports = {
       'primary': '#14213D',
       'secondary': '#FCA311',
       'third': '#E5E5E5',
-      'black': '000000',
+      'black': '#000000',
     },
   },
   plugins: [],
