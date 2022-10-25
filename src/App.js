@@ -4,6 +4,7 @@ import Props from "./pages/Props"
 import Lessons from "./pages/Lessons";
 import Headerbar from "./Components/Headersurl";
 import Footer from "./Components/Footer"
+import DVT from './pages/DVT';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/lessons" element={<Lessons/>}></Route>
         <Route path="/props" element={<Props/>}></Route>
+        <Route path="/dvt" element={<DVT/>}></Route>
       </Routes>
     </Router>
   );
