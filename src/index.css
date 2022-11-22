@@ -1,12 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-body {
-  background-color: #14213D;
-  color: white;
-}
 
-.custom-position {
-  object-position: 90% -2px;
-}

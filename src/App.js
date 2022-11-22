@@ -1,26 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; //adding react router 
-import Home from "./pages/Home";
-import Props from "./pages/Props"
-import Lessons from "./pages/Lessons";
-import Headerbar from "./Components/Headersurl";
-import Footer from "./Components/Footer"
-import DVT from './pages/DVT';
+
+import { Component } from 'react';
+
+class App extends Component {
 
 
-function App() {
-  return (
-    <Router>
-      <Headerbar/>
- 
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/lessons" element={<Lessons/>}></Route>
-        <Route path="/props" element={<Props/>}></Route>
-        <Route path="/dvt" element={<DVT/>}></Route>
-      </Routes>
-      <Footer />
-    </Router>
-  );
+  render() {
+    return (
+      <div>
+        <h1>Hello World</h1>
+        <button>
+          Click to change state
+        </button>
+      </div>
+    );
+  } 
 }
 
 export default App;
