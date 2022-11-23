@@ -16,7 +16,14 @@ class App extends Component {
         <h1>Hello World, {this.state.planet}. These {this.state.lifeforms} live here</h1>
         <button 
           onClick={() => {
-            this.setState({ planet: 'Mars' }); //Shallow merge of local state
+            this.setState(() => {
+              return {
+                planet: 'Mars',
+                lifeforms: 'Martians'
+              };
+            }, () => {
+              console.log(this.state);
+            }); //Passing a function + a callback function to setState. 
             console.log(this.state);
           }}
         >
