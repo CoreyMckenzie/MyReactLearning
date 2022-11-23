@@ -28,7 +28,11 @@ class App extends Component {
       <div className='App'>
         {
           this.state.monsters.map((monster) => { // map() is a built-in JS function that takes an array and returns a new array with the same number of elements as the original array
-            return <h1 key={monster.id}>{monster.name}</h1>
+            return( 
+            <div key={monster.id}> 
+              <h1>{monster.name}</h1>
+            </div>
+            ); //key is a special prop that React uses to identify each element in the array
           })
         }
 
